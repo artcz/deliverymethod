@@ -9,9 +9,9 @@ class install(_install):
     def initialize_options(self):
         _install.initialize_options(self)
         # Use this prefix to get loaded as early as possible
-        name = 'zzz_deliverymethod'
+        name = 'aaaaaa_deliverymethod'
 
-        contents = 'import deliverymethod'
+        contents = 'import sys; import deliverymethod\n'
         self.extra_path = (name, contents)
 
     def finalize_options(self):
