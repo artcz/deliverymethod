@@ -9,7 +9,7 @@ class install(_install):
     def initialize_options(self):
         _install.initialize_options(self)
         # Use this prefix to get loaded as early as possible
-        name = 'zzz_' + self.distribution.metadata.name
+        name = 'zzz_deliverymethod'
 
         contents = 'import deliverymethod'
         self.extra_path = (name, contents)
